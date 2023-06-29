@@ -167,7 +167,7 @@ try {
     die();
 }`
 
-[access to do lis on web browser](http://http://13.49.66.178/todo_list.php)
+[access to do list on web browser](http://http://13.49.66.178/todo_list.php)
 
 ![to do list](.\images\to-do-list-web-browser.PNG)
 
