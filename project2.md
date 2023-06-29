@@ -45,6 +45,15 @@
 ![securing](.\images\securing-mysql.PNG)
 
 
+### Installing PHP
+
+`sudo apt install php-fpm php-mysql`
+
+![installing PHP](.\images\installing-php.PNG)
+
+
+
+
 
 
 
