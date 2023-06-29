@@ -147,6 +147,32 @@ phpinfo();`
 
 ![To Do List](.\images\to-do-list-database.PNG)
 
+`nano /var/www/projectLEMP/todo_list.php`
+
+`<?php
+$user = "example_user";
+$password = "password";
+$database = "example_database";
+$table = "todo_list";
+
+try {
+  $db = new PDO("mysql:host=localhost;dbname=$database", $user, $password);
+  echo "<h2>TODO</h2><ol>";
+  foreach($db->query("SELECT content FROM $table") as $row) {
+    echo "<li>" . $row['content'] . "</li>";
+  }
+  echo "</ol>";
+} catch (PDOException $e) {
+    print "Error!: " . $e->getMessage() . "<br/>";
+    die();
+}`
+
+[access to do lis on web browser](http://http://13.49.66.178/todo_list.php)
+
+![to do list](.\images\to-do-list-web-browser.PNG)
+
+
+
 
 
 
