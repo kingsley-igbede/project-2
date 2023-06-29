@@ -113,6 +113,41 @@ phpinfo();`
 ![test PHP with NGINX](.\images\php-nginx-test.PNG)
 
 
+### Retrieve Data from MySql Database with PHP
+
+`sudo mysql -p`
+
+`CREATE DATABASE `example_database`;`
+
+` CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'password';`
+
+`GRANT ALL ON example_database.* TO 'example_user'@'%';`
+
+`exit`
+
+`mysql -u example_user -p`
+
+![database and user](.\images\create-database-user-php.PNG)
+
+`SHOW DATABASES;`
+
+![database](.\images\show-database.PNG)
+
+`CREATE TABLE example_database.todo_list (item_id INT AUTO_INCREMENT,content VARCHAR(255),PRIMARY KEY(item_id));`
+
+`mysql> INSERT INTO example_database.todo_list (content) VALUES ("My first important item");`
+
+`mysql> INSERT INTO example_database.todo_list (content) VALUES ("My second important item");`
+
+`mysql> INSERT INTO example_database.todo_list (content) VALUES ("My third important item");`
+
+`mysql> INSERT INTO example_database.todo_list (content) VALUES ("My first important item");`
+
+`SELECT * FROM example_database.todo_list;`
+
+![To Do List](.\images\to-do-list-database.PNG)
+
+
 
 
 
