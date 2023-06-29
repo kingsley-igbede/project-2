@@ -103,14 +103,11 @@ server {
 
 ### Testing PHP with NGINX
 
-`sudo nano /var/www/projectLEMP/info.php`
 
-`<?php
-phpinfo();`
 
-[testing PHP with NGINX](http://http://13.48.44.19/info.php)
 
-![test PHP with NGINX](.\php-nginx-test.PNG)
+
+
 
 
 
